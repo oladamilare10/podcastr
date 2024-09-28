@@ -42,6 +42,7 @@ const PodcastDetails = ({ params: { podcastId } }: { params: { podcastId: Id<'po
       <PodcastDetailPlayer 
         isOwner={isOwner}
         podcastId={podcast._id}
+        audioUrl={podcast.audioUrl !== undefined ? podcast.audioUrl : ''}
         {...podcast}
       />
 
